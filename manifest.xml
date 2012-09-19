@@ -9,6 +9,7 @@
   <website>http://pluginlotto.org/</website>
   <copyright>See COPYRIGHT.txt</copyright>
   <license>GNU General Public License version 2</license>
+  
   <requires>
     <type>elgg_version</type>
     <version>1.8</version>
@@ -30,10 +31,11 @@
       <name>pdo_sqlite</name>
     </suggests>
     
-    <priority>
-      <plugin>izap-elgg-bridge</plugin>
-      <priority>after</priority>
-    </priority>
+    <requires>
+    <type>priority</type>
+    <plugin>izap-elgg-bridge</plugin>
+    <priority>after</priority>
+    </requires>
     
   <screenshot>
     <description>Izap seo admin settings</description>
@@ -49,5 +51,6 @@
   </screenshot>
     
   <activate_on_install>false</activate_on_install>
+  <category>iz</category>
   <admin_interface>advanced</admin_interface>
 </plugin_manifest>
