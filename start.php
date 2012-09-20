@@ -30,7 +30,7 @@ elgg_register_event_handler('init', 'system', 'izap_seo_init');
 function izap_seo_init() {
   //start plugin
   izap_plugin_init(GLOBAL_IZAP_SEO_PLUGIN);
-
+   
   elgg_register_widget_type('izap-seo', elgg_echo('MY seo widget'),
       elgg_echo('this is test on elgg widget'), 'profile');
 
